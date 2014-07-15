@@ -2114,3 +2114,303 @@ ActionView::Template::Error (undefined method `teacher_setup' for #<#<Class:0xb4
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (10.3ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-07-15 11:48:13 -0400
+Processing by TeachersController#new as HTML
+  Rendered teachers/_form.html.erb (1.6ms)
+  Rendered teachers/new.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 9ms
+
+SyntaxError (/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:28: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...er.append=( sub.label, "name" );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:32: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...ffer.append=( sub.label, "ID" );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:36: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+....append=( sub.label, "Active" );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:47: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:49: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/teachers/_form.html.erb:28: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:32: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:36: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/_form.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/_form.html.erb:47: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/teachers/_form.html.erb:49: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/new.html.erb:3:in `_app_views_teachers_new_html_erb___130068389_88881100'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.1ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-07-15 11:48:41 -0400
+Processing by TeachersController#new as HTML
+  Rendered teachers/_form.html.erb (1.0ms)
+  Rendered teachers/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:28: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...er.append=( sub.label, 'name' );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:32: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...ffer.append=( sub.label, 'ID' );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:36: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+....append=( sub.label, 'Active' );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:47: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:49: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/teachers/_form.html.erb:28: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:32: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:36: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/_form.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/_form.html.erb:47: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/teachers/_form.html.erb:49: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/new.html.erb:3:in `_app_views_teachers_new_html_erb___130068389_88881100'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (21.3ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (50.4ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-07-15 11:50:20 -0400
+Processing by TeachersController#new as HTML
+  Rendered teachers/_form.html.erb (1.1ms)
+  Rendered teachers/new.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 7ms
+
+SyntaxError (/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:28: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...er.append=( sub.label, 'name' );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:32: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...ffer.append=( sub.label, 'ID' );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:36: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+....append=( sub.label, 'Active' );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:47: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:49: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/teachers/_form.html.erb:28: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:32: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:36: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:39: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/_form.html.erb:45: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/_form.html.erb:47: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/teachers/_form.html.erb:49: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/new.html.erb:3:in `_app_views_teachers_new_html_erb___130068389_88881100'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.3ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-07-15 11:52:12 -0400
+Processing by TeachersController#new as HTML
+  Rendered teachers/_form.html.erb (0.9ms)
+  Rendered teachers/new.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 17ms
+
+SyntaxError (/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:27: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...er.append=( sub.label, 'name' );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:31: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...ffer.append=( sub.label, 'ID' );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:35: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+....append=( sub.label, 'Active' );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:46: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:48: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/teachers/_form.html.erb:27: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:31: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:35: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/_form.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/_form.html.erb:46: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/teachers/_form.html.erb:48: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/new.html.erb:3:in `_app_views_teachers_new_html_erb___130068389_88881100'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.6ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-07-15 11:52:42 -0400
+Processing by TeachersController#new as HTML
+  Rendered teachers/_form.html.erb (1.1ms)
+  Rendered teachers/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 8ms
+
+SyntaxError (/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:27: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+...fer.append=( sub.label, :name );@output_buffer.safe_append='...
+...                               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:46: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ofoi/apps/rails/exam02/app/views/teachers/_form.html.erb:48: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/teachers/_form.html.erb:27: syntax error, unexpected ')', expecting tCOLON2 or '[' or '.'
+  app/views/teachers/_form.html.erb:38: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/_form.html.erb:44: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/_form.html.erb:46: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/teachers/_form.html.erb:48: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/new.html.erb:3:in `_app_views_teachers_new_html_erb___130068389_88881100'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-07-15 11:52:53 -0400
+Processing by TeachersController#new as HTML
+  Rendered teachers/_form.html.erb (8.8ms)
+  Rendered teachers/new.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `teacher_setup' for #<#<Class:0xb5e508c>:0xb4800c0>):
+    1: <%= form_for(teacher_setup(@teacher)) do |f| %>
+    2:   <% if @teacher.errors.any? %>
+    3:     <div id="error_explanation">
+    4:       <h2><%= pluralize(@teacher.errors.count, "error") %> prohibited this teacher from being saved:</h2>
+  app/views/teachers/_form.html.erb:1:in `_app_views_teachers__form_html_erb__955761067_94626180'
+  app/views/teachers/new.html.erb:3:in `_app_views_teachers_new_html_erb___130068389_88881100'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (23.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p547@pr/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.8ms)
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-07-15 11:53:09 -0400
+Processing by TeachersController#new as HTML
+  Rendered teachers/_form.html.erb (21.3ms)
+  Rendered teachers/new.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 36ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-15 11:53:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 11:53:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 11:53:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 11:53:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 11:53:09 -0400
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2014-07-15 11:53:09 -0400
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2014-07-15 11:53:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-15 11:53:09 -0400
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-07-15 11:54:28 -0400
+Processing by TeachersController#new as HTML
+  Rendered teachers/_form.html.erb (14.1ms)
+  Rendered teachers/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 28ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-15 11:54:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 11:54:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 11:54:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 11:54:28 -0400
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2014-07-15 11:54:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 11:54:28 -0400
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2014-07-15 11:54:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-15 11:54:28 -0400
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-07-15 11:55:32 -0400
+Processing by TeachersController#new as HTML
+  Rendered teachers/_form.html.erb (24.7ms)
+  Rendered teachers/new.html.erb within layouts/application (25.4ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-15 11:55:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 11:55:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 11:55:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 11:55:32 -0400
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2014-07-15 11:55:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 11:55:32 -0400
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2014-07-15 11:55:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-15 11:55:32 -0400
