@@ -2414,3 +2414,189 @@ Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2014-07-15 11:55:32 -0
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-15 11:55:32 -0400
+
+
+Started GET "/teachers/new" for 127.0.0.1 at 2014-07-15 11:56:44 -0400
+Processing by TeachersController#new as HTML
+  Rendered teachers/_form.html.erb (13.8ms)
+  Rendered teachers/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 33ms (Views: 18.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-15 11:56:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 11:56:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 11:56:44 -0400
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2014-07-15 11:56:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 11:56:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 11:56:44 -0400
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2014-07-15 11:56:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-15 11:56:44 -0400
+
+
+Started POST "/teachers" for 127.0.0.1 at 2014-07-15 11:58:22 -0400
+Processing by TeachersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z20igl/w+i//+g5XZfERxe8++xAuFZTNLkK2rmQdEEs=", "teacher"=>{"name"=>"Josh", "identity"=>"1234", "subjects_attributes"=>{"0"=>{"name"=>"Data", "identity"=>"1", "active"=>"1"}, "1"=>{"name"=>"usage", "identity"=>"2", "active"=>"1"}, "2"=>{"name"=>"Objetos", "identity"=>"4", "active"=>"1"}, "3"=>{"name"=>"Null", "identity"=>"5", "active"=>"1"}, "4"=>{"name"=>"NotEnable", "identity"=>"6", "active"=>"0"}, "5"=>{"name"=>"Sup", "identity"=>"8", "active"=>"1"}}}, "commit"=>"Create Teacher"}
+Unpermitted parameters: subjects_attributes
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "teachers" ("created_at", "identity", "name", "updated_at") VALUES (?, ?, ?, ?)[0m  [["created_at", "2014-07-15 15:58:22.430775"], ["identity", "1234"], ["name", "Josh"], ["updated_at", "2014-07-15 15:58:22.430775"]]
+  [1m[35m (267.2ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/teachers/5
+Completed 302 Found in 277ms (ActiveRecord: 269.0ms)
+
+
+Started GET "/teachers/5" for 127.0.0.1 at 2014-07-15 11:58:22 -0400
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT  "teachers".* FROM "teachers"  WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered teachers/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-15 11:58:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 11:58:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 11:58:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 11:58:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 11:58:22 -0400
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2014-07-15 11:58:22 -0400
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2014-07-15 11:58:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-15 11:58:22 -0400
+
+
+Started GET "/teachers" for 127.0.0.1 at 2014-07-15 11:58:24 -0400
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.4ms)[0m  SELECT "teachers".* FROM "teachers"
+  [1m[36mSubject Load (0.6ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?  [["teacher_id", 3]]
+  [1m[36mSubject Load (0.5ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?[0m  [["teacher_id", 4]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?  [["teacher_id", 5]]
+  Rendered teachers/index.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/teachers/4" for 127.0.0.1 at 2014-07-15 11:58:26 -0400
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT  "teachers".* FROM "teachers"  WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered teachers/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/teachers/5" for 127.0.0.1 at 2014-07-15 11:58:30 -0400
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers"  WHERE "teachers"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered teachers/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/teachers/1/edit" for 127.0.0.1 at 2014-07-15 11:59:01 -0400
+Processing by TeachersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT  "teachers".* FROM "teachers"  WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?  [["teacher_id", 1]]
+  Rendered teachers/_form.html.erb (12.4ms)
+  Rendered teachers/edit.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teachers/" for 127.0.0.1 at 2014-07-15 11:59:28 -0400
+Processing by TeachersController#index as HTML
+  [1m[36mTeacher Load (0.5ms)[0m  [1mSELECT "teachers".* FROM "teachers"[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?  [["teacher_id", 1]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?[0m  [["teacher_id", 3]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?  [["teacher_id", 4]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?[0m  [["teacher_id", 5]]
+  Rendered teachers/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 50ms (Views: 44.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-07-15 11:59:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-07-15 11:59:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-07-15 11:59:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-07-15 11:59:28 -0400
+
+
+Started GET "/assets/teachers.css?body=1" for 127.0.0.1 at 2014-07-15 11:59:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-07-15 11:59:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-07-15 11:59:28 -0400
+
+
+Started GET "/assets/teachers.js?body=1" for 127.0.0.1 at 2014-07-15 11:59:28 -0400
+
+
+Started GET "/teachers/5/edit" for 127.0.0.1 at 2014-07-15 11:59:30 -0400
+Processing by TeachersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT  "teachers".* FROM "teachers"  WHERE "teachers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?[0m  [["teacher_id", 5]]
+  Rendered teachers/_form.html.erb (5.9ms)
+  Rendered teachers/edit.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teachers/1/edit" for 127.0.0.1 at 2014-07-15 11:59:34 -0400
+Processing by TeachersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT  "teachers".* FROM "teachers"  WHERE "teachers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mSubject Load (0.2ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  Rendered teachers/_form.html.erb (7.0ms)
+  Rendered teachers/edit.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 24ms (Views: 21.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teachers/5/edit" for 127.0.0.1 at 2014-07-15 11:59:36 -0400
+Processing by TeachersController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT  "teachers".* FROM "teachers"  WHERE "teachers"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?[0m  [["teacher_id", 5]]
+  Rendered teachers/_form.html.erb (5.5ms)
+  Rendered teachers/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/teachers/3/edit" for 127.0.0.1 at 2014-07-15 11:59:38 -0400
+Processing by TeachersController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers"  WHERE "teachers"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects"  WHERE "subjects"."teacher_id" = ?[0m  [["teacher_id", 3]]
+  Rendered teachers/_form.html.erb (3.6ms)
+  Rendered teachers/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 12ms (Views: 10.2ms | ActiveRecord: 0.2ms)
