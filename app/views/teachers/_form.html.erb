@@ -1,4 +1,4 @@
-<%= form_for(@teacher) do |f| %>
+<%= form_for(teacher_setup(@teacher)) do |f| %>
   <% if @teacher.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@teacher.errors.count, "error") %> prohibited this teacher from being saved:</h2>
@@ -19,7 +19,25 @@
     <%= f.label :identity %><br>
     <%= f.text_field :identity %>
   </div>
+  <h1> Subjects </h1> <br>
+  <div class ="field_list">
+  <% f.fields_for :subjects do |sub| %>
+    <div class="field">
+      <%= sub.label :name %> <br>
+      <%= sub.text_field :name %> <br>
+     </div>
+    <div class="field">
+      <%= sub.label :identity %> <br>
+      <%= sub.text_field :identity %> <br>
+    </div>
+    <div class="field">
+      <%= sub.label :active %> <br>
+      <%= sub.check_box :active  %>
+    </div>
+  <% end %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+
 <% end %>

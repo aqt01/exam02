@@ -15,6 +15,10 @@ class TeachersController < ApplicationController
   # GET /teachers/new
   def new
     @teacher = Teacher.new
+    6.times do
+	@teacher.subjects.build
+    end
+    	
   end
 
   # GET /teachers/1/edit
@@ -25,13 +29,15 @@ class TeachersController < ApplicationController
   # POST /teachers.json
   def create
     @teacher = Teacher.new(teacher_params)
-
+#    if params[:subjecs]
     respond_to do |format|
       if @teacher.save
-        format.html { redirect_to @teacher, notice: 'Teacher was successfully created.' }
+        flash[:notice] = "Successfully created new teacher and his subjects"
+	format.html { redirect_to @teacher, notice: 'Teacher was successfully created.' }
         format.json { render :show, status: :created, location: @teacher }
       else
-        format.html { render :new }
+        flash[:notice] = "Successfully created new teacher and his subjects"
+	format.html { render :new }
         format.json { render json: @teacher.errors, status: :unprocessable_entity }
       end
     end
